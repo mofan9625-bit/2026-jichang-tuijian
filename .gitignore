@@ -1,0 +1,6 @@
+# Ignored files
+*.zip
+scratch/
+.DS_Store
+Thumbs.db
+node_modules/

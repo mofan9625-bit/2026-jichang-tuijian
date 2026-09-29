@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 稳定机场推荐与专线测评 | 晚高峰不卡顿 | 机场专线云 (JichangZhuanxianYun.com)</title>
+  <meta name="description" content="机场专线云提供2026年最新客观、自费实测的科学上网机场推荐榜单。涵盖IEPL/IPLC专线、BGP中转、性价比机场、ChatGPT/Netflix解锁测评与跑路避坑预警。">
+  <meta name="keywords" content="2026稳定机场推荐, 晚高峰不卡专线, IPLC专线机场, IEPL专线, 科学上网客户端教程, 机场测速, 机场跑路黑榜, Clash Verge教程, Shadowrocket订阅">
+  <link rel="canonical" href="https://jichangzhuanxianyun.com/">
+  
+  <!-- Open Graph / GEO Meta Tags for Social & AI Engines -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2026 稳定机场推荐与专线测评 | 晚高峰不卡顿 | 机场专线云">
+  <meta property="og:description" content="机场专线云提供2026年最新客观、自费实测的科学上网机场推荐榜单。涵盖IEPL/IPLC专线、BGP中转、性价比机场、ChatGPT/Netflix解锁测评与跑路避坑预警。">
+  <meta property="og:url" content="https://jichangzhuanxianyun.com/">
+  <meta property="og:site_name" content="机场专线云">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:image" content="https://jichangzhuanxianyun.com/images/logo.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="2026 稳定机场推荐与专线测评 | 机场专线云">
+  <meta name="twitter:description" content="客观、自费实测的科学上网机场推荐榜单。涵盖IEPL/IPLC专线、ChatGPT/Netflix解锁测评与跑路预警。">
+  <meta name="twitter:image" content="https://jichangzhuanxianyun.com/images/logo.png">
+
+  <!-- GEO Location & Engine Meta -->
+  <meta name="geo.region" content="CN">
+  <meta name="geo.placename" content="China">
+  <meta name="robots" content="index, follow">
+
+  <!-- Schema.org JSON-LD Structured Data for AI & Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "机场专线云",
+    "alternateName": "JichangZhuanxianYun",
+    "url": "https://jichangzhuanxianyun.com/",
+    "description": "2026 稳定机场推荐与硬核专线测评分析平台",
+    "publisher": {
+      "@type": "Organization",
+      "name": "机场专线云团队",
+      "url": "https://jichangzhuanxianyun.com/",
+      "logo": "https://jichangzhuanxianyun.com/images/logo.png"
+    }
+  }
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar">
+    ⚡ <strong>2026年9月最新观测：</strong> 已更新晚高峰压测数据！红黑榜新增2家异常预警机场，建议优先选择月付以降低风险。
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="header">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt="机场专线云" class="logo-img">
+        <span>机场专线云</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#recommendations" class="nav-link active">推荐榜单</a></li>
+          <li><a href="#scenarios" class="nav-link">知识库</a></li>
+          <li><a href="promos.html" class="nav-link">福利优惠</a></li>
+          <li><a href="status-monitor.html" class="nav-link">跑路避坑监控</a></li>
+          <li><a href="faq.html" class="nav-link">知识问答库</a></li>
+          <li><a href="toolbox.html" class="nav-link">客户端工具</a></li>
+          <li><a href="about.html" class="nav-link">关于我们</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="切换主题">☀️</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">⚡ 2026 稳定机场硬核测速与实测推荐</div>
+          <h1 class="hero-title">拒绝跑路与虚标 <br><span>真实晚高峰测速选选好线路</span></h1>
+          <p class="hero-subtitle">
+            全网独立自费实测！为你精准分流“商务极速专线”、“性价比首选”、“4K影音/AI大模型解锁”，实时监控节点丢包与跑路风险。
+          </p>
+
+          <div class="hero-search-box">
+            <input type="text" id="globalSearchInput" placeholder="输入机场名称 / 线路类型 / 客户端问题..." aria-label="搜索">
+            <button type="button" id="globalSearchBtn">搜索全站</button>
+          </div>
+          <div id="searchResultTip" class="search-result-tip"></div>
+
+          <div class="quick-stats">
+            <div class="stat-card">
+              <div class="stat-num">36+</div>
+              <div class="stat-desc">长期追踪观测机场</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">20:00</div>
+              <div class="stat-desc">晚高峰压测标准</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-num">100%</div>
+              <div class="stat-desc">自费购买无充值评级</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media">
+          <img src="images/hero_banner.jpg" alt="机场专线网络性能实测与云端监控" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- 模块一：机场推荐（精准分流 & 结构化表格） -->
+    <section id="recommendations" class="section-block">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-tag">Module 01 / 精准分流</div>
+          <h2 class="section-title">2026 稳定机场推荐榜单 (月度更新)</h2>
+          <p class="section-subtitle">按线路架构与适用人群分类，包含月付价格、流媒体解锁及专属折扣链接</p>
+        </header>
+
+        <!-- Filter Controls -->
+        <div class="filter-tabs">
+          <button class="filter-btn table-filter-btn active" data-category="all">全部精选</button>
+          <button class="filter-btn table-filter-btn" data-category="iepl">商务极速专线 (IEPL/IPLC)</button>
+          <button class="filter-btn table-filter-btn" data-category="budget">性价比首选 (学生/轻度)</button>
+          <button class="filter-btn table-filter-btn" data-category="video">4K影音/AI大模型解锁专区</button>
+        </div>
+
+        <!-- Structure Table -->
+        <div class="table-container">
+          <table class="custom-table" id="recommendTable">
+            <thead>
+              <tr>
+                <th>机场名称</th>
+                <th>运营状态</th>
+                <th>线路架构</th>
+                <th>月付起步</th>
+                <th>月流量</th>
+                <th>流媒体 / AI 解锁</th>
+                <th>推荐指数</th>
+                <th>优势短评</th>
+                <th>官网入口</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Row 1: 云界线 -->
+              <tr data-category="iepl video">
+                <td><strong>云界线 (Yunjiexian)</strong></td>
+                <td><span class="status-pill normal"><span class="status-dot"></span> 正常运营</span></td>
+                <td><span class="badge badge-iepl">全节点 1x IPLC 专线</span></td>
+                <td><strong>￥22.00</strong> <span style="font-size:0.75rem; color:var(--text-dim);">(折合￥8/月)</span></td>
+                <td>150 GB</td>
+                <td>Netflix / Disney+ / ChatGPT / Claude 原生全解</td>
+                <td><span class="star-rating">★★★★★</span> (9.9)</td>
+                <td>全节点1x倍率IPLC专线，不限设备与网速，原生IP高解封率</td>
+                <td><a href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a></td>
+              </tr>
+              <!-- Row 2: 大佬云 -->
+              <tr data-category="iepl video">
+                <td><strong>大佬云 (DaLao Cloud)</strong></td>
+                <td><span class="status-pill normal"><span class="status-dot"></span> 正常运营</span></td>
+                <td><span class="badge badge-iepl">全节点 1x IPLC 专线</span></td>
+                <td><strong>￥23.00</strong> <span style="font-size:0.75rem; color:var(--text-dim);">(折合￥8/月)</span></td>
+                <td>130 GB</td>
+                <td>Netflix / Disney+ / ChatGPT / Claude 原生解封</td>
+                <td><span class="star-rating">★★★★★</span> (9.7)</td>
+                <td>全节点1x倍率IPLC专线，单节点最高2.5Gbps，不限设备并发</td>
+                <td><a href="https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a></td>
+              </tr>
+              <!-- Row 3: 环球梯 -->
+              <tr data-category="iepl video">
+                <td><strong>环球梯 (HuanQiu Ti)</strong></td>
+                <td><span class="status-pill normal"><span class="status-dot"></span> 正常运营</span></td>
+                <td><span class="badge badge-iepl">IPLC 专线 + Hysteria2</span></td>
+                <td><strong>￥23.00</strong> <span style="font-size:0.75rem; color:var(--text-dim);">(折合￥8/月)</span></td>
+                <td>120 GB</td>
+                <td>美/日/港/台主流流媒体 & AI服务全解锁</td>
+                <td><span class="star-rating">★★★★★</span> (9.5)</td>
+                <td>Hysteria2协议+晚高峰优化，清晰标注3~10台设备并发</td>
+                <td><a href="https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a></td>
+              </tr>
+              <!-- Row 4: 榴莲云 -->
+              <tr data-category="iepl video">
+                <td><strong>榴莲云 (LiuLian Cloud)</strong></td>
+                <td><span class="status-pill normal"><span class="status-dot"></span> 正常运营</span></td>
+                <td><span class="badge badge-iepl">全节点 1x IPLC 专线</span></td>
+                <td><strong>￥24.00</strong> <span style="font-size:0.75rem; color:var(--text-dim);">(折合￥8/月)</span></td>
+                <td>140 GB</td>
+                <td>Netflix / Disney+ / ChatGPT / Claude 原生解封</td>
+                <td><span class="star-rating">★★★★☆</span> (9.3)</td>
+                <td>全节点1x倍率IPLC专线，单节点2.5Gbps，不限速不限设备数</td>
+                <td><a href="https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a></td>
+              </tr>
+              <!-- Row 5: 神行加速 -->
+              <tr data-category="budget video">
+                <td><strong>神行加速 (ShenXing Express)</strong></td>
+                <td><span class="status-pill normal"><span class="status-dot"></span> 正常运营</span></td>
+                <td><span class="badge badge-bgp">BGP 中转 + FullCone</span></td>
+                <td><strong>￥18.00</strong></td>
+                <td>300 GB</td>
+                <td>YouTube 4K / TikTok / 游戏加速</td>
+                <td><span class="star-rating">★★★★☆</span> (9.1)</td>
+                <td>大流量套餐首选，开放FullCone NAT，适合游戏电竞与追剧</td>
+                <td><a href="https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a></td>
+              </tr>
+              <!-- Row 6: 闪电鼠 -->
+              <tr data-category="iepl video budget">
+                <td><strong>闪电鼠 (ShanDian Shu)</strong></td>
+                <td><span class="status-pill normal"><span class="status-dot"></span> 正常运营</span></td>
+                <td><span class="badge badge-iepl">全节点 1x IPLC 专线</span></td>
+                <td><strong>￥22.00</strong> <span style="font-size:0.75rem; color:var(--text-dim);">(折合￥8/月)</span></td>
+                <td>120 GB</td>
+                <td>Netflix / Disney+ / ChatGPT / TikTok 原生全解</td>
+                <td><span class="star-rating">★★★★☆</span> (9.1)</td>
+                <td>全节点1x倍率IEPL专线，单节点最高2.5Gbps，不限设备并发</td>
+                <td><a href="https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 3条新手避坑法则 -->
+        <div class="pitfall-box">
+          <div class="pitfall-header">
+            ⚠️ 博主特供：新手选购机场 3 大避坑法则
+          </div>
+          <ul class="pitfall-list">
+            <li class="pitfall-item">
+              <strong>法则一：坚持月付，切勿被“年付半价”诱惑</strong>
+              机场行业具备高流动性，无论宣称规模多大，年付风险极高。月付能让你随时切换优质线路，规避商家跑路损失。
+            </li>
+            <li class="pitfall-item">
+              <strong>法则二：谨防“低价高倍率”超售陷阱</strong>
+              部分廉价机场套餐表面便宜，但高速节点标注 5x 或 10x 扣量倍率，实际流量极缩水。请认准真实 1x 倍率。
+            </li>
+            <li class="pitfall-item">
+              <strong>法则三：必备“双机场备用方案”</strong>
+              没有 100% 不掉线的服务。建议主力选择 IEPL 专线，再配置一个便宜的按量付费机场作备用防患于未然。
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 模块七：细分场景专用推荐 (长尾关键词 SEO) -->
+    <section id="scenarios" class="section-block">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-tag">Module 07 / 场景定制</div>
+          <h2 class="section-title">细分长尾场景专用推荐</h2>
+          <p class="section-subtitle">满足 AI 办公、跨境电商固定 IP、游戏低延迟加速与永不到期备用需求</p>
+        </header>
+
+        <div class="filter-tabs">
+          <button class="filter-btn scenario-filter-btn active" data-scenario="all">全部场景</button>
+          <button class="filter-btn scenario-filter-btn" data-scenario="ai">AI大模型办公 (纯净IP)</button>
+          <button class="filter-btn scenario-filter-btn" data-scenario="ecommerce">跨境电商 (固定/原生IP)</button>
+          <button class="filter-btn scenario-filter-btn" data-scenario="payg">按量付费 (永不到期备用)</button>
+          <button class="filter-btn scenario-filter-btn" data-scenario="game">游戏主机加速 (FullCone NAT)</button>
+        </div>
+
+        <div class="cards-grid">
+          <article class="review-card scenario-card" data-tag="ai">
+            <div class="review-top">
+              <h3 class="review-title">🤖 AI 办公专线 (OpenAI / Claude)</h3>
+              <span class="badge badge-iepl">纯净家宽 IP</span>
+            </div>
+            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:12px;">
+              针对 ChatGPT 4o、Claude 3.5 Sonnet 及 Midjourney 专门优化的干净住宅 IP 节点，彻底告别“Access Denied”与繁琐风控验证码。
+            </p>
+            <div class="dimension-scores">
+              <div class="dim-item">IP 纯净度: <span>9.9 / 10</span></div>
+              <div class="dim-item">验证码触发率: <span>< 0.1%</span></div>
+            </div>
+            <a href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" target="_blank" rel="noopener noreferrer" class="aff-btn" style="margin-top:auto;">获取 AI 专用线路</a>
+          </article>
+
+          <article class="review-card scenario-card" data-tag="ecommerce">
+            <div class="review-top">
+              <h3 class="review-title">📦 跨境电商外贸专区</h3>
+              <span class="badge badge-bgp">防关联 / 固定 IP</span>
+            </div>
+            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:12px;">
+              亚马逊 Amazon、Shopee、TikTok 运营专用，提供长期固定的机房/原生 IP，防止因 IP 乱跳导致店铺关联封号。
+            </p>
+            <div class="dimension-scores">
+              <div class="dim-item">IP 稳定性: <span>9.8 / 10</span></div>
+              <div class="dim-item">防封号系数: <span>极高</span></div>
+            </div>
+            <a href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" target="_blank" rel="noopener noreferrer" class="aff-btn" style="margin-top:auto;">获取外贸固定 IP</a>
+          </article>
+
+          <article class="review-card scenario-card" data-tag="payg">
+            <div class="review-top">
+              <h3 class="review-title">⏱️ 永不到期按量套餐</h3>
+              <span class="badge badge-budget">不限时长 / 随用随扣</span>
+            </div>
+            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:12px;">
+              买一次流量永久有效，无月度清零压力。适合日常轻度查文献、接收 Gmail 或作为主力机场故障时的备用预案。
+            </p>
+            <div class="dimension-scores">
+              <div class="dim-item">性价比: <span>9.9 / 10</span></div>
+              <div class="dim-item">流量有效期: <span>永久有效</span></div>
+            </div>
+            <a href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" target="_blank" rel="noopener noreferrer" class="aff-btn" style="margin-top:auto;">选购按量付费套餐</a>
+          </article>
+
+          <article class="review-card scenario-card" data-tag="game">
+            <div class="review-top">
+              <h3 class="review-title">🎮 游戏电竞直连加速</h3>
+              <span class="badge badge-iepl">FullCone NAT / 0丢包</span>
+            </div>
+            <p style="font-size:0.9rem; color:var(--text-muted); margin-bottom:12px;">
+              针对 Steam、PS5、Xbox 及日韩台服外服游戏优化，开放 FullCone 类型，解决游戏连线 NatType 受限与丢包问题。
+            </p>
+            <div class="dimension-scores">
+              <div class="dim-item">平均延迟: <span>35ms - 55ms</span></div>
+              <div class="dim-item">NAT 类型: <span>Open (Type 1)</span></div>
+            </div>
+            <a href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" target="_blank" rel="noopener noreferrer" class="aff-btn" style="margin-top:auto;">查看游戏加速节点</a>
+          </article>
+        </div>
+
+        <!-- 知识库精选专区 -->
+        <div class="article-library-wrapper" style="margin-top: 40px; padding-top: 36px; border-top: 1px dashed var(--border-color);">
+          <div class="section-header" style="text-align: left; margin-bottom: 24px;">
+            <div class="section-tag">Articles / 深度长文与避坑指南</div>
+            <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--text-main);">📚 精选知识库</h3>
+          </div>
+          
+          <div class="article-cards-list">
+            <article class="article-preview-card">
+              <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px">
+                <span class="badge badge-iepl">线路科普</span><span class="badge badge-bgp">选购指南</span>
+                <span style="font-size:0.85rem;color:var(--text-muted)">2026-09-29 · 约 10 分钟阅读</span>
+              </div>
+              <h3 style="font-size:1.25rem;font-weight:700;color:var(--text-main);line-height:1.4;margin-bottom:8px"><a href="article-iplc-iepl-bgp-direct.html" class="article-title-link" style="color:inherit;text-decoration:none">IPLC/IEPL 专线、BGP 中转与直连线路有什么区别？别再被“千兆直连”忽悠了</a></h3>
+              <p style="font-size:0.92rem;color:var(--text-muted);line-height:1.6;margin-bottom:14px">通俗拆解 IPLC/IEPL 专线、BGP 中转与公网直连的区别，解释晚高峰拥塞、丢包和抖动的原因，教你识别千兆宣传并验收真实线路体验。</p>
+              <a href="article-iplc-iepl-bgp-direct.html" class="nav-link" style="color:var(--accent-glow);font-weight:600">阅读全文 →</a>
+            </article>
+            <article class="article-preview-card">
+              <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 10px;">
+                <span class="badge badge-iepl">AI风控排障</span>
+                <span class="badge badge-bgp">纯净IP指南</span>
+                <span style="font-size: 0.85rem; color: var(--text-muted);">2026-09-28 · ~8 min 阅读</span>
+              </div>
+              <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--text-main); line-height: 1.4; margin-bottom: 8px;">
+                <a href="article-chatgpt-access-denied.html" class="article-title-link" style="color: inherit; text-decoration: none;">
+                  ChatGPT 总是报错 Access Denied / 1020？2026 年解锁 Claude / ChatGPT 纯净 IP 机场推荐与选购指南
+                </a>
+              </h3>
+              <p style="font-size: 0.92rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 14px;">
+                整理资料时页面突然打不开，刚输入问题就出现 Access Denied，或者登录后一直停留在验证界面... 本文围绕常见错误、网络选择与实际验收展开，帮助你把预算花在可验证的体验上。
+              </p>
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <a href="article-chatgpt-access-denied.html" class="nav-link" style="color: var(--accent-glow); font-weight: 600; display: inline-flex; align-items: center; gap: 6px;">
+                  阅读全文 <span>→</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 模块三：机场深度测评（六维打分与硬核测评） -->
+    <section id="reviews" class="section-block">
+      <div class="container">
+        <header class="section-header">
+          <div class="section-tag">Module 03 / 硬核实测</div>
+          <h2 class="section-title">旗舰机场深度测评报告</h2>
+          <p class="section-subtitle">严格按照六大维度评分（1-10分），附带晚高峰 20:00-23:00 实测数据</p>
+        </header>
+
+        <div class="cards-grid">
+          <!-- Card 1: 云界线 -->
+          <article class="review-card">
+            <div class="review-top">
+              <div>
+                <h3 class="review-title">第一名：云界线 (Yunjiexian)</h3>
+                <p style="font-size:0.85rem; color:var(--text-muted);">全节点 1x 倍率 IPLC 专线 | 不限速不限设备</p>
+              </div>
+              <div class="score-badge">9.9</div>
+            </div>
+
+            <div class="dimension-scores">
+              <div class="dim-item">1. 架构与节点分布: <span>9.9</span></div>
+              <div class="dim-item">2. 晚高峰测速: <span>9.9</span></div>
+              <div class="dim-item">3. 流媒体/AI解锁: <span>9.9</span></div>
+              <div class="dim-item">4. 性价比与倍率: <span>9.8</span></div>
+              <div class="dim-item">5. 工单响应速度: <span>9.8</span></div>
+              <div class="dim-item">6. 稳定性评估: <span>9.9</span></div>
+            </div>
+
+            <div class="pro-con-box">
+              <ul class="pro-list">
+                <li>全节点 1x 真实倍率 IPLC 专线，不限并发设备数与网速上限</li>
+                <li>丰富档位：轻云版￥22/月 150G，年付包折合￥8/月，随心包￥99起</li>
+                <li>原生 IP，支持 Netflix / Disney+ / ChatGPT 4o / Claude 无缝解锁</li>
+              </ul>
+              <ul class="con-list">
+                <li>促销季热门轻量套餐需及时抢购</li>
+                <li>按量随心包不提供额外补流量包</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:16px; display:flex; gap:10px;">
+              <button class="copy-btn open-review-modal" data-id="yunjiexian" style="flex:1;">查看深度报告</button>
+              <a href="https://9625mofan01.yunjiexianaff.com/#/?code=OOYhSj0L" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a>
+            </div>
+          </article>
+
+          <!-- Card 2: 大佬云 -->
+          <article class="review-card">
+            <div class="review-top">
+              <div>
+                <h3 class="review-title">第二名：大佬云 (DaLao Cloud)</h3>
+                <p style="font-size:0.85rem; color:var(--text-muted);">全节点 1x 倍率 IPLC 专线 | 峰值 2.5Gbps</p>
+              </div>
+              <div class="score-badge">9.7</div>
+            </div>
+
+            <div class="dimension-scores">
+              <div class="dim-item">1. 架构与节点分布: <span>9.8</span></div>
+              <div class="dim-item">2. 晚高峰测速: <span>9.7</span></div>
+              <div class="dim-item">3. 流媒体/AI解锁: <span>9.8</span></div>
+              <div class="dim-item">4. 性价比与倍率: <span>9.7</span></div>
+              <div class="dim-item">5. 工单响应速度: <span>9.8</span></div>
+              <div class="dim-item">6. 稳定性评估: <span>9.8</span></div>
+            </div>
+
+            <div class="pro-con-box">
+              <ul class="pro-list">
+                <li>全节点 1x 真实倍率 IPLC 专线，单节点峰值最高 2.5Gbps，覆盖香港x20、日台新美等多机房</li>
+                <li>完全不限制客户端设备并发数量，原生 IP 完美解锁 Netflix/Disney+/ChatGPT/Claude</li>
+                <li>多样化方案：初云版￥23/月 (130G)，年付活动包折合￥8/月，闲云/悠云终身按量包￥99/￥199</li>
+              </ul>
+              <ul class="con-list">
+                <li>年付活动包月配额 60GB，适合小流量及日常办公用户</li>
+                <li>终身按量包不提供额外补充流量包</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:16px; display:flex; gap:10px;">
+              <button class="copy-btn open-review-modal" data-id="dalao" style="flex:1;">查看深度报告</button>
+              <a href="https://mofanvip01.dalaoyunaff.com/#/?code=QT2rqp5V" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a>
+            </div>
+          </article>
+
+          <!-- Card 3: 环球梯 -->
+          <article class="review-card">
+            <div class="review-top">
+              <div>
+                <h3 class="review-title">第三名：环球梯 (HuanQiu Ti)</h3>
+                <p style="font-size:0.85rem; color:var(--text-muted);">Hysteria2 弱网协议 | 晚高峰专线优化</p>
+              </div>
+              <div class="score-badge">9.5</div>
+            </div>
+
+            <div class="dimension-scores">
+              <div class="dim-item">1. 架构与节点分布: <span>9.6</span></div>
+              <div class="dim-item">2. 晚高峰测速: <span>9.5</span></div>
+              <div class="dim-item">3. 流媒体/AI解锁: <span>9.6</span></div>
+              <div class="dim-item">4. 性价比与倍率: <span>9.5</span></div>
+              <div class="dim-item">5. 工单响应速度: <span>9.5</span></div>
+              <div class="dim-item">6. 稳定性评估: <span>9.5</span></div>
+            </div>
+
+            <div class="pro-con-box">
+              <ul class="pro-list">
+                <li>Hysteria2 弱网协议 + 晚高峰优质线路优化，极高抗抖动与流媒体解封能力</li>
+                <li>套餐梯队清晰：环球学生套餐 ￥96/年 (折合￥8/月)、轻享版 ￥23/月、畅游版 ￥39/月 (240G)</li>
+                <li>严格规范设备并发上限（3台~10台），保障公用带宽速度不被恶意滥用</li>
+              </ul>
+              <ul class="con-list">
+                <li>学生套餐与轻享版同时限制最多 3 台设备在线</li>
+                <li>随行包 (￥99/80G) 与灵活包 (￥299/400G) 按照 365 天有效期计费</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:16px; display:flex; gap:10px;">
+              <button class="copy-btn open-review-modal" data-id="huanqiu" style="flex:1;">查看深度报告</button>
+              <a href="https://mofanvip01.huanqiutiaff.com/#/?code=l7oLmjVU" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a>
+            </div>
+          </article>
+
+          <!-- Card 4: 榴莲云 -->
+          <article class="review-card">
+            <div class="review-top">
+              <div>
+                <h3 class="review-title">第四名：榴莲云 (LiuLian Cloud)</h3>
+                <p style="font-size:0.85rem; color:var(--text-muted);">全节点 1x 倍率 IPLC 专线 | 搬迁包￥8/月起</p>
+              </div>
+              <div class="score-badge">9.3</div>
+            </div>
+
+            <div class="dimension-scores">
+              <div class="dim-item">1. 架构与节点分布: <span>9.4</span></div>
+              <div class="dim-item">2. 晚高峰测速: <span>9.3</span></div>
+              <div class="dim-item">3. 流媒体/AI解锁: <span>9.4</span></div>
+              <div class="dim-item">4. 性价比与倍率: <span>9.7</span></div>
+              <div class="dim-item">5. 工单响应速度: <span>9.3</span></div>
+              <div class="dim-item">6. 稳定性评估: <span>9.3</span></div>
+            </div>
+
+            <div class="pro-con-box">
+              <ul class="pro-list">
+                <li>全节点 1x 真实倍率 IPLC 专线，单节点峰值 2.5Gbps，覆盖港日台新英等，不限并发设备数与网速</li>
+                <li>长周期多重折扣：季付9折、半年8.5折、年付8折、两年付低至7折（轻享包折合￥16.80/月）</li>
+                <li>超值海量套餐：搬迁王 750GB/月（每100G仅13.33元）、搬迁包特惠￥96/年（折合￥8/月）</li>
+              </ul>
+              <ul class="con-list">
+                <li>搬迁包-年付特惠版月流量为 60GB，适合小流量及轻度日常用户</li>
+                <li>两年付方案折扣最大但订阅周期长，建议先月付测试体验</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:16px; display:flex; gap:10px;">
+              <button class="copy-btn open-review-modal" data-id="liulian" style="flex:1;">查看深度报告</button>
+              <a href="https://mofan88.liulianyunaff.com/#/?code=ETsQBSuR" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a>
+            </div>
+          </article>
+
+          <!-- Card 5: 神行加速 -->
+          <article class="review-card">
+            <div class="review-top">
+              <div>
+                <h3 class="review-title">第五名：神行加速 (ShenXing Express)</h3>
+                <p style="font-size:0.85rem; color:var(--text-muted);">BGP 中转 + FullCone NAT 电竞级</p>
+              </div>
+              <div class="score-badge">9.1</div>
+            </div>
+
+            <div class="dimension-scores">
+              <div class="dim-item">1. 架构与节点分布: <span>9.1</span></div>
+              <div class="dim-item">2. 晚高峰测速: <span>9.1</span></div>
+              <div class="dim-item">3. 流媒体/AI解锁: <span>9.2</span></div>
+              <div class="dim-item">4. 性价比与倍率: <span>9.5</span></div>
+              <div class="dim-item">5. 工单响应速度: <span>9.0</span></div>
+              <div class="dim-item">6. 稳定性评估: <span>9.0</span></div>
+            </div>
+
+            <div class="pro-con-box">
+              <ul class="pro-list">
+                <li>开放 FullCone NAT 类型，专为外服游戏与追剧优化</li>
+                <li>300GB 大流量套餐，满足多媒体下载需求</li>
+              </ul>
+              <ul class="con-list">
+                <li>AI 工具解封节点需特殊挑选</li>
+                <li>节点数量相对适中</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:16px; display:flex; gap:10px;">
+              <button class="copy-btn open-review-modal" data-id="shenxing" style="flex:1;">查看深度报告</button>
+              <a href="https://vipmofan01.shenxingaff.com/#/?code=nn4ohwnK" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a>
+            </div>
+          </article>
+
+          <!-- Card 6: 闪电鼠 -->
+          <article class="review-card">
+            <div class="review-top">
+              <div>
+                <h3 class="review-title">第六名：闪电鼠 (ShanDian Shu)</h3>
+                <p style="font-size:0.85rem; color:var(--text-muted);">全节点 1x 倍率 IEPL 专线 | 年付折合￥8/月起</p>
+              </div>
+              <div class="score-badge">9.1</div>
+            </div>
+
+            <div class="dimension-scores">
+              <div class="dim-item">1. 架构与节点分布: <span>9.2</span></div>
+              <div class="dim-item">2. 晚高峰测速: <span>9.1</span></div>
+              <div class="dim-item">3. 流媒体/AI解锁: <span>9.2</span></div>
+              <div class="dim-item">4. 性价比与倍率: <span>9.5</span></div>
+              <div class="dim-item">5. 工单响应速度: <span>9.1</span></div>
+              <div class="dim-item">6. 稳定性评估: <span>9.1</span></div>
+            </div>
+
+            <div class="pro-con-box">
+              <ul class="pro-list">
+                <li>全节点 1x 真实倍率 IEPL 专线，单节点最高 2.5Gbps，覆盖港台、日韩新美及欧洲</li>
+                <li>不限制客户端连接设备数量，支持电脑、手机、路由器自由并发在线</li>
+                <li>限时钜惠小包 ￥96/年 (折合￥8/月 60GB)，轻快版 ￥22/月 (120GB)，疾速版 ￥40/月 (250GB)</li>
+              </ul>
+              <ul class="con-list">
+                <li>限时钜惠小包需年付订阅，月配额 60GB 适合小流量轻度用户</li>
+                <li>大流量雷霆版 (500GB/月) 需 ￥70/月 预算</li>
+              </ul>
+            </div>
+
+            <div style="margin-top:16px; display:flex; gap:10px;">
+              <button class="copy-btn open-review-modal" data-id="shandian" style="flex:1;">查看深度报告</button>
+              <a href="https://mofanvip01.shandianshuaff.com/#/?code=a3GAQAXg" target="_blank" rel="noopener noreferrer" class="aff-btn">[直达官网]</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal View for Deep Reviews -->
+  <div class="modal-overlay" id="reviewModalOverlay">
+    <div class="modal-card">
+      <button class="modal-close" id="modalCloseBtn">✕</button>
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+        <h3 id="modalTitle" style="font-size:1.5rem;">测评详情</h3>
+        <span class="score-badge" id="modalScore">9.8 分</span>
+      </div>
+
+      <div style="font-size:0.92rem; color:var(--text-muted); display:flex; flex-direction:column; gap:10px; margin-bottom:20px;">
+        <div><strong>线路架构：</strong> <span id="modalLines">-</span></div>
+        <div><strong>晚高峰测速：</strong> <span id="modalSpeed">-</span></div>
+        <div><strong>流媒体/AI解锁：</strong> <span id="modalUnlock">-</span></div>
+        <div><strong>套餐价格：</strong> <span id="modalPrice">-</span></div>
+        <div><strong>服务响应：</strong> <span id="modalService">-</span></div>
+      </div>
+
+      <h4 style="color:var(--status-normal); margin-bottom:6px;">✓ 优势亮点：</h4>
+      <ul id="modalPros" class="pro-list" style="font-size:0.9rem; margin-bottom:16px;"></ul>
+
+      <h4 style="color:var(--status-danger); margin-bottom:6px;">✕ 值得注意的不足：</h4>
+      <ul id="modalCons" class="con-list" style="font-size:0.9rem; margin-bottom:16px;"></ul>
+
+      <div style="background:rgba(99,102,241,0.1); padding:12px; border-radius:8px; border-left:3px solid var(--accent-primary); font-size:0.88rem;">
+        <strong>适用人群画像：</strong>
+        <p id="modalTarget" style="color:var(--text-main); margin-top:4px;"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer & Legal Disclaimer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="disclaimer-box">
+        <strong>⚖️ 标准合规与免责声明：</strong><br>
+        本博客仅提供网络技术交流、开源客户端配置指导与客观测速数据，本站不销售任何代理服务。购买与使用第三方网络服务时，请读者自行审慎评估风险，严格遵守所在地区法律法规，严禁用于任何非法活动。建议优先选择月付套餐以降低潜在风险。
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>机场专线云 (JichangZhuanxianYun.com)</strong>. 版权所有.
+        </div>
+        <div style="display:flex; gap:16px;">
+          <a href="promos.html">福利优惠</a>
+          <a href="status-monitor.html">跑路避坑监控</a>
+          <a href="faq.html">知识问答 FAQ</a>
+          <a href="toolbox.html">客户端工具</a>
+          <a href="about.html">关于我们</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
