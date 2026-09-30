@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 Clash 配置教程：从订阅导入到规则分流与 TUN 设置 | 机场专线云</title>
+<meta name="description" content="2026 Clash 配置图文教程，以 Clash Verge Rev 为例，讲解下载安装、订阅导入、节点选择、规则模式、系统代理、TUN 设置与常见故障排查，附官方文档配图。">
+<meta name="keywords" content="2026Clash配置教程,Clash Verge Rev教程,Clash订阅导入,规则模式,TUN设置,mihomo">
+<link rel="canonical" href="https://jichangzhuanxianyun.com/article-clash-2026-setup.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="2026 Clash 配置教程：从订阅导入到规则分流与 TUN 设置">
+<meta property="og:description" content="2026 Clash 配置图文教程，以 Clash Verge Rev 为例，讲解下载安装、订阅导入、节点选择、规则模式、系统代理、TUN 设置与常见故障排查，附官方文档配图。">
+<meta property="og:url" content="https://jichangzhuanxianyun.com/article-clash-2026-setup.html">
+<meta property="og:site_name" content="机场专线云">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jichangzhuanxianyun.com/images/clash-2026/verge_import.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="2026 Clash 配置教程：从订阅导入到规则分流与 TUN 设置">
+<meta name="twitter:description" content="2026 Clash 配置图文教程，以 Clash Verge Rev 为例，讲解下载安装、订阅导入、节点选择、规则模式、系统代理、TUN 设置与常见故障排查，附官方文档配图。">
+<meta name="twitter:image" content="https://jichangzhuanxianyun.com/images/clash-2026/verge_import.png">
+<link rel="stylesheet" href="css/style.css">
+<style>
+.article-body { overflow-wrap: anywhere; }
+.article-body h2 { scroll-margin-top: 100px; }
+.clash-figure { margin: 28px 0; }
+.clash-figure img { display: block; width: 100%; height: auto; border-radius: 12px; border: 1px solid var(--border-color); background: #f5f5f5; }
+.clash-figure figcaption { font-size: .85rem; line-height: 1.7; color: var(--text-muted); margin-top: 10px; }
+.article-table caption { text-align: left; margin-bottom: 10px; color: var(--text-muted); }
+@media (max-width: 600px) { .article-header-block, .article-body { padding: 22px 18px; } .article-main-title { font-size: 1.55rem; } .article-table { min-width: 560px; } }
+</style>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "TechArticle",
+  "headline": "2026 Clash 配置教程：从订阅导入到规则分流与 TUN 设置",
+  "description": "2026 Clash 配置图文教程，以 Clash Verge Rev 为例，讲解下载安装、订阅导入、节点选择、规则模式、系统代理、TUN 设置与常见故障排查，附官方文档配图。",
+  "datePublished": "2026-09-30",
+  "dateModified": "2026-09-30",
+  "inLanguage": "zh-CN",
+  "mainEntityOfPage": "https://jichangzhuanxianyun.com/article-clash-2026-setup.html",
+  "image": "https://jichangzhuanxianyun.com/images/clash-2026/verge_import.png",
+  "author": {
+    "@type": "Organization",
+    "name": "机场专线云编辑组"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "机场专线云",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jichangzhuanxianyun.com/images/logo.png"
+    }
+  }
+}</script>
+</head>
+<body>
+<aside class="announcement-bar">📚 <strong>精选知识库：</strong> 2026 Clash 配置图文教程</aside>
+<header class="header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="机场专线云" class="logo-img">
+        <span>机场专线云</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html#recommendations" class="nav-link">推荐榜单</a></li>
+          <li><a href="index.html#scenarios" class="nav-link active">知识库</a></li>
+          <li><a href="promos.html" class="nav-link">福利优惠</a></li>
+          <li><a href="status-monitor.html" class="nav-link">跑路避坑监控</a></li>
+          <li><a href="faq.html" class="nav-link">知识问答库</a></li>
+          <li><a href="toolbox.html" class="nav-link">客户端工具</a></li>
+          <li><a href="about.html" class="nav-link">关于我们</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="切换主题">☀️</button>
+      </div>
+    </div>
+  </header>
+<main class="article-container">
+<p style="margin-bottom:20px"><a href="index.html#scenarios">← 返回精选知识库</a></p>
+<header class="article-header-block">
+<span class="badge badge-iepl">客户端教程</span> <span class="badge badge-bgp">官方文档配图</span>
+<h1 class="article-main-title">2026 Clash 配置教程：从订阅导入到规则分流与 TUN 设置</h1>
+<div class="article-meta-info"><span>📅 <time datetime="2026-09-30">2026-09-30</time></span><span>✍️ 机场专线云编辑组</span><span>⏱️ 约 12 分钟阅读</span></div>
+</header>
+<nav class="toc-box" aria-label="文章目录"><div class="toc-title">📌 文章目录</div><ul class="toc-list"><li><a href="#section-1">一、先分清客户端、内核和订阅</a></li>
+<li><a href="#section-2">二、安装前准备与版本选择</a></li>
+<li><a href="#section-3">三、导入订阅，并确认配置已启用</a></li>
+<li><a href="#section-4">四、选择节点，理解三种代理模式</a></li>
+<li><a href="#section-5">五、先开启系统代理，再判断是否需要 TUN</a></li>
+<li><a href="#section-6">六、配置成功后，做一次完整验收</a></li>
+<li><a href="#section-7">七、更新订阅与自定义规则怎么做</a></li>
+<li><a href="#section-8">八、常见故障按顺序排查</a></li></ul></nav>
+<article class="article-body">
+<p>装好 Clash，导入订阅后还是打不开网页，问题常常出在配置没有启用、策略组选错，或应用流量没有进入客户端。这篇 2026 Clash 配置教程以桌面端 Clash Verge Rev 为例，从安装、导入到验证逐步说明。先完成一条能够正常访问的连接，再调整分流和进阶功能，排查起来会清楚很多。</p>
+<div class="article-callout"><strong>适用范围与图片说明</strong><p>本文面向 Windows、macOS 桌面用户，操作名称以实际安装版本为准。三张配图来自 Clash Verge Rev 官方文档，是文档中的演示界面，并非本站对某个 2026 版本的实测截图；图内服务商名称仅为原图示例。</p></div>
+
+<h2 id="section-1">一、先分清客户端、内核和订阅</h2>
+<p>日常所说的 Clash，可能指代理内核，也可能指带界面的客户端。本文使用的 Clash Verge Rev 是独立维护的图形客户端，内置 mihomo 内核，负责展示配置、管理连接和切换节点。不同客户端的菜单位置、兼容协议和更新方式并不完全相同，不能只看名字里有没有 Clash 就认定它们是同一个软件。项目关系与功能以<a href="https://github.com/clash-verge-rev/clash-verge-rev" target="_blank" rel="noopener noreferrer">项目仓库说明</a>为准。</p>
+<p>客户端本身不等于网络服务。你还需要自己管理的服务器配置，或服务商提供的有效订阅。订阅是一份可更新的配置来源，里面可能包含节点、策略组和规则；节点负责连接出口，策略组负责选择节点，规则负责决定请求交给哪个组。理解这三层，后面就不会把“已经导入”误认为“已经连接”。</p>
+<p>搜索下载地址时，优先从项目仓库进入文档和 Releases。本文采用的文档域名为 <a href="https://www.clashverge.dev/" target="_blank" rel="noopener noreferrer">www.clashverge.dev</a>，可从仓库核对；仅凭网页标题写着“Clash 官网”，不足以判断来源。</p>
+
+<h2 id="section-2">二、安装前准备与版本选择</h2>
+<p>准备好三样东西：与你的系统兼容的安装包、一条有效订阅，以及能够正常联网的基础网络。先关闭其他正在接管代理的客户端，避免多个软件同时修改系统代理。记下已有的工作网络设置，后续遇到异常时方便恢复。</p>
+<p>在<a href="https://github.com/clash-verge-rev/clash-verge-rev/releases" target="_blank" rel="noopener noreferrer">项目发布页</a>选择适合日常使用的正式版本，并按系统与处理器架构下载。Windows 应先查看系统类型；Mac 应区分 Intel 与 Apple 芯片。不要把源代码压缩包当成安装程序，也不要仅因为文件名数字更大就选择测试构建。具体系统要求参见<a href="https://www.clashverge.dev/install.html" target="_blank" rel="noopener noreferrer">官方安装说明</a>。</p>
+<p>安装后先确认主界面能够打开。Windows 若只有托盘图标、窗口无法显示，可根据官方说明检查 WebView2 运行环境。首次设置不必同时打开开机自启、局域网共享与 TUN；保留较少变量，更容易判断是哪一步发生问题。</p>
+
+<h2 id="section-3">三、导入订阅，并确认配置已启用</h2>
+<p>进入服务商后台，复制适用于 Clash 或 mihomo 的订阅地址，而不是浏览器地址栏里的用户中心链接。链接通常带有令牌，作用接近访问凭证。复制时避免混入换行和空格，也不要将完整地址发到公开评论区、截图或陌生在线转换站。</p>
+<ol>
+<li>打开客户端的“订阅”页面，将地址粘贴到订阅输入框，点击“导入”。</li>
+<li>等待配置下载和解析结束；若出现错误，先记录提示，不要连续重复点击。</li>
+<li>在生成的配置卡片中选中要使用的订阅，确认启用状态。</li>
+<li>进入“代理”页面，检查是否出现对应的策略组和节点名称。</li>
+</ol>
+<figure class="clash-figure"><a href="images/clash-2026/verge_import.png" target="_blank" rel="noopener"><img src="images/clash-2026/verge_import.png" width="2006" height="952" alt="Clash Verge Rev 官方教程：在订阅页粘贴链接后点击导入" loading="lazy" decoding="async"></a><figcaption>图 1：订阅导入位置。来源：<a href="https://www.clashverge.dev/guide/quickstart.html" target="_blank" rel="noopener noreferrer">Clash Verge Rev 官方快速入门</a>，点击图片查看原尺寸。</figcaption></figure>
+<p>也可以导入已有的本地 YAML 文件。它适合离线保存的配置，但普通本地配置不会凭空获得远程更新能力。官网的一键导入依赖系统正确关联客户端，按钮没有反应时，可以改用复制链接的方式。相关入口见<a href="https://www.clashverge.dev/guide/profile.html" target="_blank" rel="noopener noreferrer">官方订阅导入文档</a>。</p>
+
+<h2 id="section-4">四、选择节点，理解三种代理模式</h2>
+<p>进入代理页面后，先展开主要策略组，选择一个有效节点。某些配置会把视频、聊天和其他业务分成不同组，所以更换主组不一定改变全部应用的出口。遇到特定网站异常时，应查看它实际匹配的组，而不是只盯着最上方的节点名称。</p>
+<div class="article-table-wrapper"><table class="article-table"><caption>三种模式的区别（仅针对进入内核的请求）</caption><thead><tr><th scope="col">模式</th><th scope="col">处理方式</th><th scope="col">使用建议</th></tr></thead><tbody><tr><td>Rule／规则</td><td>依照配置规则选择直连、代理或拒绝</td><td>日常使用，先核对规则是否符合需求</td></tr><tr><td>Global／全局</td><td>交由全局策略处理</td><td>短时对比排障，并检查全局组选项</td></tr><tr><td>Direct／直连</td><td>由内核直接连接目标</td><td>用于对比直连表现，不等于退出客户端</td></tr></tbody></table></div>
+<p>规则模式不会天然保证“国内直连、国外代理”，结果取决于实际规则；全局模式也不意味着电脑里每个程序都已被接管。选择模式与接管流量是两个步骤，相关定义参见 <a href="https://wiki.metacubex.one/config/general/" target="_blank" rel="noopener noreferrer">mihomo 全局配置</a>。</p>
+<figure class="clash-figure"><a href="images/clash-2026/verge_proxy.png" target="_blank" rel="noopener"><img src="images/clash-2026/verge_proxy.png" width="2000" height="792" alt="Clash Verge Rev 官方教程：代理组、节点与规则全局直连模式的位置" loading="lazy" decoding="async"></a><figcaption>图 2：模式与策略组。来源：<a href="https://www.clashverge.dev/guide/quickstart.html" target="_blank" rel="noopener noreferrer">官方快速入门</a>。原图“全部流量”应理解为已进入内核的流量；图内服务名称不代表本站推荐。</figcaption></figure>
+<p>延迟测试适合快速筛掉明显不可达的节点，但数值低不等于下载快，更不保证目标网站可用。选定节点后，用自己真正需要的网站或应用验证；不要为了追逐几毫秒差异频繁切换出口。</p>
+<p>第一次验收时，可以先固定选择一个节点，完成测试后再尝试自动选择。这样出现问题时，你知道请求经过了哪个出口，也方便前后比较。若一个策略组里面仍然是其他策略组，应继续展开确认最终选择；组名看起来正确，并不代表内部一定指向可用节点。</p>
+
+<h2 id="section-5">五、先开启系统代理，再判断是否需要 TUN</h2>
+<p>如果主要使用浏览器，先打开客户端中的“系统代理”，再刷新测试页面。这个开关会调整操作系统的代理设置，让遵循系统代理的程序把请求交给客户端；具有独立代理设置的程序，仍需检查自己的设置。</p>
+<figure class="clash-figure"><a href="images/clash-2026/verge_enable_sysproxy.png" target="_blank" rel="noopener"><img src="images/clash-2026/verge_enable_sysproxy.png" width="2006" height="972" alt="Clash Verge Rev 官方教程：设置页面中的系统代理与 TUN 开关" loading="lazy" decoding="async"></a><figcaption>图 3：开启系统代理。来源：<a href="https://www.clashverge.dev/guide/quickstart.html" target="_blank" rel="noopener noreferrer">官方快速入门</a>。不同版本的设置布局可能变化。</figcaption></figure>
+<p>浏览器正常、某个应用仍无法连接时，再考虑 TUN。它通过虚拟网络接口和相关路由接管流量，适用于一些不遵循系统代理的程序。开启前确认客户端提示的服务与权限要求已经满足，开启后观察连接记录是否出现目标应用的请求。</p>
+<p>TUN 与规则模式可以同时使用：前者影响流量怎样进入内核，后者决定进入后走哪条路径。它不保证所有环境下接管全部流量，具体还受路由、排除项和其他网络软件影响。若与工作 VPN 或虚拟机网络冲突，先关闭 TUN 做对比，再参考 <a href="https://wiki.metacubex.one/config/inbound/tun/" target="_blank" rel="noopener noreferrer">mihomo TUN 文档</a>检查对应选项。</p>
+
+<h2 id="section-6">六、配置成功后，做一次完整验收</h2>
+<p>建议分别打开一个预期直连的网站和一个预期经过代理的目标，再到“连接”或“日志”页面查看域名、匹配规则、策略组与节点。页面能够打开，只能说明访问成功；连接记录才能帮助你判断它是否按预期分流。</p>
+<p>接着运行一次真实任务，例如连续浏览资料、播放一段视频或下载一个小文件。留意是否频繁重连、突然停顿，而不是只看测速按钮。若需要核对出口，查询结果只代表那一次请求所走的路径，不代表全部程序共享同一出口。</p>
+<p>最后关闭代理并正常退出，确认原有网络能够恢复。通过“启用后可用、分流符合预期、退出后可恢复”这三项，再开启开机自启会更稳妥。保留一份能够工作的设置记录，以后更新出问题时便于对照。</p>
+<p>排查时可以用简单文字记下测试时间、网络环境、节点名称和现象。例如，同一台电脑在家庭宽带下失败，换手机热点后恢复，说明值得继续检查本地接入环境；同一网络下只有一个节点失败，则可优先检查该节点。每次只改变一个条件，比同时重装软件、换订阅和改规则更容易找出原因。</p>
+
+<h2 id="section-7">七、更新订阅与自定义规则怎么做</h2>
+<p>服务商调整节点后，可在订阅页面更新对应配置，并检查更新提示和节点列表。更新失败时先保留现有可用配置，不要立即删除。若订阅地址已经重置，则应换成新链接，旧地址不会因为多点几次刷新就恢复有效。</p>
+<p>需要让个别域名固定直连或走指定策略组时，先确认组名存在，再添加自定义规则。规则有匹配顺序，过于宽泛的条目放在前面，可能提前接走后面的请求。每次只改一条，并用连接记录验证命中结果。规则类型和顺序见 <a href="https://wiki.metacubex.one/config/rules/" target="_blank" rel="noopener noreferrer">mihomo 路由规则文档</a>。</p>
+<p>直接修改远程订阅原文件，可能在更新时被覆盖。长期自定义内容应优先使用客户端支持的扩展配置或脚本，并先备份。合并规则、覆盖数组和脚本执行都有各自语义，不要直接粘贴一整份陌生模板；参照<a href="https://www.clashverge.dev/guide/extend.html" target="_blank" rel="noopener noreferrer">官方扩展配置说明</a>操作，修改后确认内核能够正常加载。</p>
+<p>备份除了配置文件，还应记录客户端版本、自己添加的规则，以及常用策略组的选择。备份中可能含有服务器地址和密码，应放在自己能够控制的位置。换电脑时，先验证新环境能否加载和连接，再逐步迁移个性化设置；不要在尚未验收时就删除旧设备上的可用配置。</p>
+
+<h2 id="section-8">八、常见故障按顺序排查</h2>
+<h3>订阅导入失败，或提示配置解析错误</h3>
+<p>先检查链接是否完整、账户是否有效、订阅格式是否兼容。若返回的是登录页或错误页，内容就不是可用的 YAML。出现证书错误时，核对系统时间和订阅域名，并联系提供方排查，不要把忽略证书校验作为日常解决方式。</p>
+<h3>有节点却无法访问，或只有部分网站异常</h3>
+<p>依次确认配置已启用、当前模式正确、策略组有有效选择，以及系统代理或 TUN 确实生效。如果日志里根本没有目标连接，优先检查应用代理设置；如果请求已经进入内核，再检查命中的规则和节点。全局可用而规则模式失败时，可优先对比分流结果。</p>
+<h3>日志提示域名解析失败</h3>
+<p>先确认本地网络能正常联网，再查看是否改过 DNS 配置、是否存在浏览器独立解析或其他网络工具干预。DNS 解析、节点连接和网站响应属于不同环节，不应见到超时就随意更换所有 DNS 地址。保留原设置，结合 <a href="https://wiki.metacubex.one/config/dns/" target="_blank" rel="noopener noreferrer">mihomo DNS 文档</a>逐项排查。</p>
+<h3>退出客户端后，电脑反而无法上网</h3>
+<p>这可能是系统代理残留，仍指向已经停止的本地端口。在 Windows 的“设置 → 网络和 Internet → 代理”中检查手动代理，关闭由客户端留下的设置；工作单位要求的代理应按原记录恢复。相关现象可查<a href="https://www.clashverge.dev/faq/windows.html" target="_blank" rel="noopener noreferrer">官方 Windows 常见问题</a>。求助时提供系统、版本、报错与复现步骤，并隐藏订阅令牌和节点密码。</p>
+<p>日常维护不需要不断堆叠配置。把有效订阅、正确策略、流量接管和连接验证四个环节逐一做好，就能形成一套容易理解、也方便恢复的 Clash 使用流程。</p>
+
+<div class="article-callout"><strong>资料与图片来源</strong><p>本文于 2026-09-30 核对项目仓库、Clash Verge Rev 官方使用文档与 mihomo 配置文档，相关链接已随正文标注。配图保留官方文档原貌，图片权利归原权利人所有；客户端持续更新，操作时请结合当前版本文档。</p><p>延伸阅读：<a href="toolbox.html">客户端工具箱</a> · <a href="faq.html">知识问答库</a> · <a href="article-iplc-iepl-bgp-direct.html">专线、中转与直连的区别</a></p></div>
+<p><a href="index.html#scenarios">返回精选知识库 →</a></p>
+</article>
+
+</main>
+<footer class="footer">
+    <div class="container">
+      <div class="disclaimer-box">
+        <strong>⚖️ 标准合规与免责声明：</strong><br>
+        本博客仅提供网络技术交流、开源客户端配置指导与客观测速数据，本站不销售任何代理服务。购买与使用第三方网络服务时，请读者自行审慎评估风险，严格遵守所在地区法律法规，严禁用于任何非法活动。建议优先选择月付套餐以降低潜在风险。
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 <strong>机场专线云 (JichangZhuanxianYun.com)</strong>. 版权所有.
+        </div>
+        <div style="display:flex; gap:16px;">
+          <a href="promos.html">福利优惠</a>
+          <a href="status-monitor.html">跑路避坑监控</a>
+          <a href="faq.html">知识问答 FAQ</a>
+          <a href="toolbox.html">客户端工具</a>
+          <a href="about.html">关于我们</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script src="js/app.js"></script>
+</body></html>
+
