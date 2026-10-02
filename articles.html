@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>精选知识库与机场避坑指南 | 机场专线云 (JichangZhuanxianYun.com)</title>
-  <meta name="description" content="机场专线云精选知识库，汇集 Clash / Shadowrocket 客户端配置教程、IPLC/IEPL 专线原理科普、云界线/神行加速等旗舰机场实测评估，以及 ChatGPT / Claude 风控排障指南。">
+  <title>2026 精选知识库与网络排障教程 | 机场专线云</title>
+  <meta name="description" content="机场专线云 2026 精选知识库，汇集 ChatGPT 打不开、Google 打不开、国外网站连接异常、Clash 配置、线路原理与网络故障排查教程。">
   <link rel="canonical" href="https://jichangzhuanxianyun.com/articles.html">
   
   <!-- Open Graph / GEO Meta Tags -->
@@ -38,33 +38,36 @@
     "mainEntity": {
       "@type": "ItemList",
       "itemListElement": [
+        {"@type":"ListItem","position":1,"url":"https://jichangzhuanxianyun.com/article-chatgpt-not-opening-2026.html","name":"2026 ChatGPT 打不开怎么办？完整排查教程"},
+        {"@type":"ListItem","position":2,"url":"https://jichangzhuanxianyun.com/article-google-not-opening-2026.html","name":"2026 Google 打不开怎么办？完整排查教程"},
+        {"@type":"ListItem","position":3,"url":"https://jichangzhuanxianyun.com/article-overseas-sites-not-opening-2026.html","name":"2026 国外网站打不开怎么办？完整排查教程"},
         {
           "@type": "ListItem",
-          "position": 1,
+          "position": 4,
           "url": "https://jichangzhuanxianyun.com/article-clash-2026-setup.html",
           "name": "2026 Clash 配置教程：从订阅导入到规则分流与 TUN 设置"
         },
         {
           "@type": "ListItem",
-          "position": 2,
+          "position": 5,
           "url": "https://jichangzhuanxianyun.com/article-shenxing-2026-review.html",
           "name": "神行加速 (ShenXing Express) 2026最新评测"
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 6,
           "url": "https://jichangzhuanxianyun.com/article-yunjiexian-2026-review.html",
           "name": "云界线机场2026最新评测"
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 7,
           "url": "https://jichangzhuanxianyun.com/article-iplc-iepl-bgp-direct.html",
           "name": "IPLC/IEPL 专线、BGP 中转与直连线路有什么区别？"
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 8,
           "url": "https://jichangzhuanxianyun.com/article-chatgpt-access-denied.html",
           "name": "ChatGPT 总是报错 Access Denied / 1020 排障指南"
         }
@@ -125,7 +128,7 @@
 
   <!-- Announcement Bar -->
   <aside class="announcement-bar">
-    📚 <strong>精选知识库：</strong> 已上线 5 篇核心干货长文，覆盖 Clash Verge Rev 教程、线路原理科普、机场深度测评及 AI 解封指南！
+    📚 <strong>精选知识库：</strong> 已上线 8 篇教程，新增 ChatGPT、Google 与国外网站打不开的 2026 系列排障指南。
   </aside>
 
   <!-- Navigation Header -->
@@ -170,6 +173,7 @@
         <button class="filter-btn" data-filter="review">机场深度评测</button>
         <button class="filter-btn" data-filter="tech">专线线路科普</button>
         <button class="filter-btn" data-filter="ai">AI风控排障</button>
+        <button class="filter-btn" data-filter="network">网页连接排障</button>
       </div>
       <input type="text" id="searchInput" class="search-input" placeholder="🔍 搜索文章标题或关键字..." aria-label="搜索文章">
     </div>
@@ -177,7 +181,31 @@
     <!-- 文章列表区域 -->
     <div class="article-cards-list" id="articlesList" style="display: flex; flex-direction: column; gap: 20px;">
       
-      <!-- 文章 1: Clash 教程 -->
+      <!-- 文章 1: ChatGPT 打不开 -->
+      <article class="article-preview-card" data-category="ai" data-title="2026 chatgpt 打不开 登录失败 白屏 一直转圈 网络错误排查教程">
+        <div style="margin-bottom:12px"><span class="badge badge-iepl">AI 应用排障</span> <span class="badge badge-bgp">2026 图文教程</span> <span style="color:var(--text-muted);font-size:.88rem">2026-10-02 · 约 12 分钟阅读</span></div>
+        <h2 style="font-size:1.35rem;font-weight:700;line-height:1.4;margin-bottom:10px"><a href="article-chatgpt-not-opening-2026.html" class="article-title-link" style="color:inherit;text-decoration:none">2026 ChatGPT 打不开怎么办？登录失败、白屏、一直转圈与网络错误完整排查教程</a></h2>
+        <p style="color:var(--text-muted);margin-bottom:16px;line-height:1.6">从 OpenAI 官方状态、浏览器站点数据、扩展程序、系统时间、DNS、网络环境到账号提示，逐层定位问题，附官方状态页截图。</p>
+        <div><a href="article-chatgpt-not-opening-2026.html" class="nav-link" style="color:var(--accent-glow);font-weight:600">阅读全文 →</a></div>
+      </article>
+
+      <!-- 文章 2: Google 打不开 -->
+      <article class="article-preview-card" data-category="network" data-title="2026 google 打不开 搜索页 登录循环 验证码 连接错误排查教程">
+        <div style="margin-bottom:12px"><span class="badge badge-iepl">搜索服务排障</span> <span class="badge badge-bgp">2026 图文教程</span> <span style="color:var(--text-muted);font-size:.88rem">2026-10-02 · 约 12 分钟阅读</span></div>
+        <h2 style="font-size:1.35rem;font-weight:700;line-height:1.4;margin-bottom:10px"><a href="article-google-not-opening-2026.html" class="article-title-link" style="color:inherit;text-decoration:none">2026 Google 打不开怎么办？搜索页无法加载、登录循环与连接错误完整教程</a></h2>
+        <p style="color:var(--text-muted);margin-bottom:16px;line-height:1.6">区分搜索、账号与单项服务异常，依次检查官方地址、浏览器数据、DNS、证书、验证码和移动端设置。</p>
+        <div><a href="article-google-not-opening-2026.html" class="nav-link" style="color:var(--accent-glow);font-weight:600">阅读全文 →</a></div>
+      </article>
+
+      <!-- 文章 3: 国外网站打不开 -->
+      <article class="article-preview-card" data-category="network" data-title="2026 国外网站打不开怎么办 dns 浏览器 证书 网络连接 排查教程">
+        <div style="margin-bottom:12px"><span class="badge badge-iepl">网络基础排障</span> <span class="badge badge-bgp">2026 通用教程</span> <span style="color:var(--text-muted);font-size:.88rem">2026-10-02 · 约 14 分钟阅读</span></div>
+        <h2 style="font-size:1.35rem;font-weight:700;line-height:1.4;margin-bottom:10px"><a href="article-overseas-sites-not-opening-2026.html" class="article-title-link" style="color:inherit;text-decoration:none">2026 国外网站打不开怎么办？DNS、浏览器、证书与网络连接完整排查教程</a></h2>
+        <p style="color:var(--text-muted);margin-bottom:16px;line-height:1.6">读懂常见错误代码，通过多设备、多浏览器、多网络对照，定位 DNS、证书、系统代理、路由或网站服务问题。</p>
+        <div><a href="article-overseas-sites-not-opening-2026.html" class="nav-link" style="color:var(--accent-glow);font-weight:600">阅读全文 →</a></div>
+      </article>
+
+      <!-- 文章 4: Clash 教程 -->
       <article class="article-preview-card" data-category="tutorial" data-title="2026 clash 配置教程 从订阅导入到规则分流与 tun 设置">
         <div style="margin-bottom:12px">
           <span class="badge badge-iepl">客户端教程</span> 
