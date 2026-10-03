@@ -44,7 +44,8 @@
 ## 🔗 深度阅读与主站导航
 
 * 🌐 **主站官方网站**：[https://jichangzhuanxianyun.com](https://jichangzhuanxianyun.com)
-* 📖 **神行加速深度评测**：[神行加速 (ShenXing Express) 2026 深度评测与电竞级线路解析](https://jichangzhuanxianyun.com/article-shenxing-2026-review.html)
+* 📖 **一元机场避坑指南**：[一元机场为什么不能用？低价套餐失效、拥塞与风险完整分析](https://jichangzhuanxianyun.com/article-one-yuan-airport-why-not-working.html)
+* 📖 **免费机场风险指南**：[免费机场为什么不建议使用？隐私、安全与稳定性风险指南](https://jichangzhuanxianyun.com/article-free-airport-not-recommended.html)
 * 📖 **云界线深度评测**：[云界线机场 2026 晚高峰测速与专线体验报告](https://jichangzhuanxianyun.com/article-yunjiexian-2026-review.html)
 * 💡 **线路架构科普**：[IPLC/IEPL 专线、BGP 中转与直连线路有什么区别？](https://jichangzhuanxianyun.com/article-iplc-iepl-bgp-direct.html)
 * 🛠️ **客户端工具箱**：[Clash / Sing-box / Shadowsocks / V2ray 客户端下载与配置教程](https://jichangzhuanxianyun.com/toolbox.html)
